@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TrendingUp, Calendar, Target, Award, Plus, Trash2 } from 'lucide-react';
+import { TrendingUp, Calendar, Award, Plus, Trash2 } from 'lucide-react';
 
 interface FastingSession {
   id: string;

@@ -17,7 +17,7 @@ export const FastingTimer: React.FC = () => {
   };
 
   useEffect(() => {
-    let interval: NodeJS.Timeout | null = null;
+    let interval: number | null = null;
     
     if (isActive && timeLeft > 0) {
       interval = setInterval(() => {
@@ -70,7 +70,7 @@ export const FastingTimer: React.FC = () => {
           
           {/* Plan Selection */}
           <div className="grid grid-cols-3 md:grid-cols-6 gap-2 mb-8">
-            {Object.entries(fastingPlans).map(([plan, details]) => (
+            {Object.entries(fastingPlans).map(([plan, _details]) => (
               <button
                 key={plan}
                 onClick={() => handlePlanChange(plan)}
